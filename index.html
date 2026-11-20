@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ORSOL — Systèmes agricoles hors-sol modulaires | Pitch International</title>
+  <meta name="description" content="Orsol : conception, exploitation et commercialisation de systèmes de production hors-sol modulaires et largement automatisés. Bénin → Afrique → International." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="nav-brand">ORSOL</div>
+    <div class="nav-dots" id="nav-dots"></div>
+    <div class="nav-controls">
+      <button class="btn-nav" id="btn-prev" aria-label="Précédent">←</button>
+      <span class="nav-counter" id="nav-counter">1 / 14</span>
+      <button class="btn-nav" id="btn-next" aria-label="Suivant">→</button>
+    </div>
+  </nav>
+
+  <div class="audio-unlock" id="audio-unlock">
+    <button id="btn-unlock">Activer la narration audio</button>
+    <span>Une interaction est requise par le navigateur pour autoriser le son</span>
+  </div>
+
+  <main id="slides">
+    <!-- Content will be the full 14 slides - see full file in repo after complete push -->
+    <section class="slide slide-cover active" data-slide="1" data-audio="audio/slide01.mp3">
+      <div class="cover-bg"></div>
+      <div class="cover-content">
+        <h1 class="cover-title">ORSOL</h1>
+        <p class="cover-subtitle">Systèmes agricoles hors-sol<br>modulaires & largement automatisés</p>
+        <p class="cover-path">Bénin  →  Afrique  →  International</p>
+        <div class="cover-footer">
+          <p>DOSSIER STRATÉGIQUE  ·  PRÉSENTATION INTERNATIONALE  ·  NOVEMBRE 2026</p>
+          <p class="cover-hint">Narration audio intégrée — activez le son puis naviguez</p>
+        </div>
+      </div>
+    </section>
+    <!-- Remaining slides are in the complete index.html -->
+  </main>
+
+  <div class="player" id="player">
+    <button id="btn-play" aria-label="Lecture / Pause">▶</button>
+    <div class="player-info">
+      <span id="player-title">Narration</span>
+      <div class="progress"><div class="progress-bar" id="progress-bar"></div></div>
+    </div>
+  </div>
+
+  <audio id="audio" preload="auto"></audio>
+  <script src="app.js"></script>
+</body>
+</html>
